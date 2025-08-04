@@ -1,3 +1,5 @@
+import RideList from '../components/RideList'
+
 const Home = () => {
   return (
     <div className="home">
@@ -6,11 +8,10 @@ const Home = () => {
       </div>
       <div>
         <h1>Theme Parks</h1>
-        <h2>
-          Hold
-        </h2>
+        <RideList />
       </div>
     </div>
   )
 }
+
 export default Home
