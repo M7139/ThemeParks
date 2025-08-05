@@ -8,3 +8,12 @@ export const GetPosts = async () => {
     throw error
   }
 }
+
+export const CreateRide = async (data) => {
+  try {
+    const res = await Client.post('/rides', data)
+    return res.data
+  } catch (error) {
+    throw error
+  }
+}
