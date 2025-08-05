@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { useEffect, useState } from 'react'
 import Ride from './Ride'
 
 const RideList = () => {
@@ -8,10 +8,15 @@ const RideList = () => {
   useEffect(() => {
     const getRides = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_API_URL}/rides`)
+        const response = await axios.get(
+          `${import.meta.env.VITE_API_URL}/rides`
+        )
         setRides(response.data)
       } catch (error) {
-        console.error(' error when get data from axios (getRides) function', error)
+        console.error(
+          ' error when get data from axios (getRides) function',
+          error
+        )
       }
     }
 
@@ -21,8 +26,7 @@ const RideList = () => {
   return (
     <div>
       {rides.map((ride) => (
-        <Ride ride={ride}/>
-     
+        <Ride ride={ride} />
       ))}
     </div>
   )
