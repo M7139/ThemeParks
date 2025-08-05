@@ -215,3 +215,39 @@ select {
   line-height: 1.6;
   padding: 0 10px;
 }
+
+/*css for category page*/
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.category-card {
+  width: 220px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.category-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.category-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
