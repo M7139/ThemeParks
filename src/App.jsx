@@ -1,11 +1,10 @@
-import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Nav from './components/Nav'
 import Ride from './components/Ride'
-import RideDetail from './components/RideDetail'
 import Category from './pages/Category'
 import Home from './pages/Home'
-import { Route, Router, Routes } from 'react-router-dom'
+import RideDetail from "./components/RideDetail"
 import RideForm from './components/RideForm'
 
 const App = () => {
@@ -17,6 +16,9 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/category" element={<Category />} />
+          <Route path="/category/:categoryName" element={<Ride />} />
+          <Route path="/category/:categoryName/:id" element={<RideDetail/>} />
           <Route path="/rideform" element={<RideForm/>} />
         </Routes>
       </main>
