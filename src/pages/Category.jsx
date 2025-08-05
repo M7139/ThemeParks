@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
@@ -41,11 +43,17 @@ const Category = () => {
   return (
     <>
       <h1>All Categories</h1>
+      
       <ul>
         {categories.map((category) => (
+          <>
+          <Link to={category}>
           <li>{category}</li>
+          </Link>
+          </>
         ))}
       </ul>
+        
     </>
   )
 }
