@@ -7,6 +7,7 @@ import Category from './pages/Category'
 import Home from './pages/Home'
 import { Route, Router, Routes } from 'react-router-dom'
 
+
 const App = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/category" element={<Category />} />
         </Routes>
       </main>
     </>
