@@ -5,6 +5,7 @@ import Ride from './components/Ride'
 import Category from './pages/Category'
 import Home from './pages/Home'
 import RideDetail from "./components/RideDetail"
+import RideForm from './components/RideForm'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/category" element={<Category />} />
           <Route path="/category/:categoryName" element={<Ride />} />
           <Route path="/category/:categoryName/:id" element={<RideDetail/>} />
+          <Route path="/rideform" element={<RideForm/>} />
         </Routes>
       </main>
     </>
