@@ -17,3 +17,12 @@ export const CreateRide = async (data) => {
     throw error
   }
 }
+
+export const SearchRide = async (data) => {
+  try {
+    const res = await Client.get(`/rides/search/${data}`)
+    return res.data
+  } catch (error) {
+    console.log(error)
+  }
+}

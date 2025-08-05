@@ -13,7 +13,7 @@ const Category = () => {
           `${import.meta.env.VITE_API_URL}/rides`
         )
 
-        //Simple function to extract unique category
+      
         const uniqueCategories = []
 
         for (let i = 0; i < response.data.length; i++) {

@@ -4,8 +4,9 @@ import Nav from './components/Nav'
 import Ride from './components/Ride'
 import Category from './pages/Category'
 import Home from './pages/Home'
-import RideDetail from "./components/RideDetail"
+import RideDetail from './components/RideDetail'
 import RideForm from './components/RideForm'
+import SearchResults from './pages/SearchResults'
 
 const App = () => {
   return (
@@ -18,8 +19,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/category" element={<Category />} />
           <Route path="/category/:categoryName" element={<Ride />} />
-          <Route path="/category/:categoryName/:id" element={<RideDetail/>} />
-          <Route path="/rideform" element={<RideForm/>} />
+          <Route path="/category/:categoryName/:id" element={<RideDetail />} />
+          <Route path="/rideform" element={<RideForm />} />
+          <Route path="/search/:search_id" element={<SearchResults />} />
         </Routes>
       </main>
     </>
