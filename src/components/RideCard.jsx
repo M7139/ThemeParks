@@ -5,7 +5,7 @@ const RideCard = ({ride})=> {
         <>
         <Link to={ride._id}>
         <h2>{ride.title}</h2>
-        <h2>{ride.category}</h2>
+        <img src={ride.img} alt={ride.title}/>
         <br />
         </Link>
         
