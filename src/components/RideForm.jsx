@@ -40,6 +40,7 @@ const RideForm = () => {
           <input
             type="text"
             name="title"
+            placeholder="Enter the name of the ride"
             value={formValues.title}
             onChange={handleChange}
             required
@@ -51,6 +52,7 @@ const RideForm = () => {
           <input
             type="text"
             name="img"
+            placeholder="Enter the image link"
             value={formValues.img}
             onChange={handleChange}
             required
@@ -62,6 +64,7 @@ const RideForm = () => {
           <input
             type="text"
             name="description"
+            placeholder="Add a describtion"
             value={formValues.description}
             onChange={handleChange}
           />
@@ -70,15 +73,15 @@ const RideForm = () => {
         <div className="form-group">
           <label>Category</label>
           <select name="category" id="category" onChange={handleChange}>
-            <option value="pendulum">Pendulum Ride</option>
-            <option value="waterRide">Water Ride</option>
-            <option value="dodgems">Dodgems</option>
-            <option value="merrygo">Merry-Go-Round</option>
-            <option value="dropTower">Drop Tower</option>
-            <option value="ferrisWheel">Ferssi Wheel</option>
-            <option value="dodgems">Dodgems</option>
-            <option value="swingRide">Swing Ride</option>
-            <option value="train">Train Ride</option>
+            <option value="Pendulum Ride">Pendulum Ride</option>
+            <option value="Water Ride">Water Ride</option>
+            <option value="Dodgems">Dodgems</option>
+            <option value="Merry-Go-Round">Merry-Go-Round</option>
+            <option value="Drop Tower">Drop Tower</option>
+            <option value="Ferris Wheel">Ferris Wheel</option>
+            <option value="Swing Ride">Swing Ride</option>
+            <option value="Train Ride">Train Ride</option>
+            <option value="Rollercoaster">Rollercoaster</option>
           </select>
         </div>
 

@@ -26,11 +26,13 @@ const Ride = ({}) => {
     <>
   <h2>{categoryName}</h2>
 
+<div className='ride-list'>
   {
     rides.map((ride)=>(
     <RideCard ride={ride}/>
   ))
   }
+  </div>
     </>
   )
 }

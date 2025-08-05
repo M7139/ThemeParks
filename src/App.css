@@ -22,7 +22,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
@@ -135,4 +135,83 @@ select {
 
 .submit-btn:hover {
   background-color: #45a049;
+}
+
+/* rides img css*/
+.ride-card {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  max-width: 300px;
+}
+
+.ride-card:hover {
+  transform: scale(1.03);
+}
+
+.ride-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* css to make the images show in rows*/
+.ride-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ride-card {
+  flex: 0 1 300px;
+}
+
+/*ride show page css*/
+.ride-detail {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ride-image {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.ride-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.ride-category {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ffdd57;
+}
+
+.ride-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0 10px;
 }
