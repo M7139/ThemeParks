@@ -43,7 +43,7 @@ The website allows users to:
 ![web-category](images/category.png)
 ![form](images/form.png)
 ![ridelist](images/ridelist.png)
-![show](images/showpage.png)
+
 
 ## Future Updates
 - add a sign in page so users can have seperate lists
