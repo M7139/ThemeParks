@@ -8,7 +8,7 @@ const Search = ({ handleSubmit, handleChange, value }) => {
         placeholder="Search Rides"
         onChange={handleChange}
       />
-      {/* <button type="submit">Search</button> */}
+      
     </form>
   )
 }

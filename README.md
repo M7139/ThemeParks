@@ -2,6 +2,10 @@
 
 > This project is for a website about theme parks where users are able to choose a category of rides and browse through the most famous rides around the world. The user is allowed to add and delete their own rides.
 
+# Deploy Link
+
+https://themeparks-project.surge.sh/
+
 ## 📑 Table of Contents
 
 - [Overview](#-overview)
@@ -43,7 +47,8 @@ The website allows users to:
 ![web-category](images/category.png)
 ![form](images/form.png)
 ![ridelist](images/ridelist.png)
-
+![show](images/frshow.png)
 
 ## Future Updates
+
 - add a sign in page so users can have seperate lists

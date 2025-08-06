@@ -5,7 +5,7 @@ import Search from '../components/Search'
 
 const Home = () => {
   const [searchValue, setSearchValue] = useState('')
-  // const [searchResult, setSearchResult] = useState([])
+  
   const navigate = useNavigate()
 
   const handleChange = (e) => {

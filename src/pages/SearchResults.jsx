@@ -23,7 +23,7 @@ const SearchResults = () => {
     <>
       <div>
         <h1 className="category-title">Results for: {search_id}</h1>
-        {results.length > 0 ? (
+        {results ? (
           <div className="category-grid">
             {results.map((ride) => (
               <>
