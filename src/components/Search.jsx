@@ -1,8 +1,6 @@
-
-const Search = ({ handleSubmit,handleChange, value }) => {
-
+const Search = ({ handleSubmit, handleChange, value }) => {
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="searchbar">
       <input
         type="text"
         name="search"
@@ -10,7 +8,7 @@ const Search = ({ handleSubmit,handleChange, value }) => {
         placeholder="Search Rides"
         onChange={handleChange}
       />
-      <button type="submit">Search</button>
+      {/* <button type="submit">Search</button> */}
     </form>
   )
 }

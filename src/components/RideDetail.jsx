@@ -12,11 +12,10 @@ const RideDetail = () => {
       `${import.meta.env.VITE_API_URL}/rides/${id}`
     )
     setRide(response.data)
-    console.log(response.data)
+    
   }
 
   useEffect(() => {
-    console.log(id)
     getSelectedRide()
   }, [id])
 
