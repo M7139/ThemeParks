@@ -4,8 +4,8 @@ const RideCard = ({ ride }) => {
     <>
       <Link to={ride._id}>
         <div className="ride-card">
-          <h2>{ride.title}</h2>
           <img src={ride.img} alt={ride.title} className="ride-image" />
+          <h2>{ride.title}</h2>
         </div>
         <br />
       </Link>

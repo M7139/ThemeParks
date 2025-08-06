@@ -5,21 +5,16 @@ import Ride from './Ride'
 const RideList = () => {
   const [rides, setRides] = useState([])
 
-  useEffect(() => {
-    const getRides = async () => {
-      try {
-        const response = await axios.get(
-          `${import.meta.env.VITE_API_URL}/rides`
-        )
-        setRides(response.data)
-      } catch (error) {
-        console.error(
-          ' error when get data from axios (getRides) function',
-          error
-        )
-      }
+  const getRides = async () => {
+    try {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/rides`)
+      setRides(response.data)
+    } catch (error) {
+      console.log(error)
     }
+  }
 
+  useEffect(() => {
     getRides()
   }, [])
 

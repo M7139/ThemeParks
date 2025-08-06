@@ -25,44 +25,35 @@ const categoryImages = {
 
 const Category = () => {
   const [categories, setCategories] = useState([])
-
+  
   useEffect(() => {
-    const getCategories = async () => {
-      try {
-        const response = await axios.get(
-          `${import.meta.env.VITE_API_URL}/rides`
-        )
+  const getCategories = async () => {
+    try {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/rides`)
 
-      
-        const uniqueCategories = []
+      const uniqueCategories = []
 
-        for (let i = 0; i < response.data.length; i++) {
-          const ride = response.data[i]
-          const category = ride.category
+      for (let i = 0; i < response.data.length; i++) {
+        const ride = response.data[i]
+        const category = ride.category
 
-          if (!uniqueCategories.includes(category)) {
-            uniqueCategories.push(category)
-          }
+        if (!uniqueCategories.includes(category)) {
+          uniqueCategories.push(category)
         }
-
-        setCategories(uniqueCategories)
-
-        console.log('unique')
-        console.log(uniqueCategories)
-
-        console.log('all')
-        console.log(response.data)
-      } catch (error) {
-        console.log(error)
       }
+
+      setCategories(uniqueCategories)
+    } catch (error) {
+      console.log(error)
     }
+  }
 
     getCategories()
   }, [])
 
   return (
     <>
-      <h1>All Categories</h1>
+      <h1 className="category-title">All Categories</h1>
 
       <div className="category-grid">
         {categories.map((category) => (
